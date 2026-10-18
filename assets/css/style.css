@@ -1,0 +1,40 @@
+/* 1. Giới hạn và làm đẹp cho ảnh đại diện (Avatar) */
+.profile-container img, 
+.avatar {
+    width: 120px;          /* Cố định chiều rộng */
+    height: 120px;         /* Cố định chiều cao bằng chiều rộng để ảnh thành hình vuông */
+    object-fit: cover;     /* Cắt ảnh vừa vặn, không bị méo hình */
+    border-radius: 50%;    /* Bo tròn thành hình tròn (tùy chọn, nếu muốn ảnh vuông thì bỏ dòng này) */
+    display: block;
+    margin: 0 auto 15px auto; /* Canh giữa ảnh và tạo khoảng cách với chữ bên dưới */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho đẹp */
+}
+
+/* 2. Cố định và canh chỉnh lại Menu điều hướng (Navbar) */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #3182ce;
+}
